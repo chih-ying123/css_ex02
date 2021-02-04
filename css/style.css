@@ -126,6 +126,11 @@
     font-weight: bolder;
     background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
 }
+.news_title span{
+    cursor: pointer;
+    color:rgb(252, 229, 96);
+    font-size: 22px;
+}
 .news_text{
     height: 200px;
     overflow:auto;
@@ -146,7 +151,7 @@
 .news_item span{
     margin: -3px;
     padding: 3px;
-    color:#fff;
+    color:rgb(255, 255, 255);
     background-color: rgb(68, 152, 248);
     border-radius: 5px;
 }
@@ -210,8 +215,8 @@
         opacity: 0.3;
     }
 .game_title{
+    display: flex;
     margin: 10px;
-    padding: 8px;
     border-bottom: 1px solid #fff;
 }
 .hot_game{
@@ -225,13 +230,15 @@
 }
 .new_game{
     cursor: pointer;
-    margin-left: -3px;
     padding: 8px 70px 8px 70px;
     color:rgb(147, 195, 250);
     background-color: rgb(14, 58, 109);
     /*border: 1px solid #fff;*/
     /*border-bottom: 1px solid rgb(68, 152, 248);*/
     border-radius: 5px 5px 0 0;
+}
+.game_box{
+    padding: 0px 20px 0px 20px;
 }
 .right_content{
     width:240px;
