@@ -37,7 +37,7 @@
 }
     /*  ----- 登入與註冊 -----  */
     .login{
-        height: 250px;
+        width:304px;
         margin-bottom: 15px;
         background-color:#fff;
         box-shadow: -0.5px 3px 10px #000;
@@ -45,6 +45,20 @@
     .login_ctr{
         display: flex;
     }
+    .login_ctr label{
+        position: relative;
+        display: inline;
+        padding: 10px 60px;
+        text-align: center;
+        color:rgb(147, 195, 250);
+        background-color: rgb(14, 58, 109);
+    }
+    /*.login_ctr .active{
+        color:#fff;
+        background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
+        position: relative;
+    }
+    
     .login_title{
         padding: 10px;
         width: 50%;
@@ -63,30 +77,47 @@
             color:rgb(255, 255, 255);
             background:linear-gradient(rgb(139, 204, 113),rgb(4, 172, 26));
         }
-    .login_text{
-        padding: 20px 10px 20px 10px;
+    */
+    .content_box{
+        display: none;
     }
-    .login_text p{
-        color:grey;
+
+    #login_ctr_radio1:checked ~ .login_ctr [for="login_ctr_radio1"],
+    #login_ctr_radio2:checked ~ .login_ctr [for="login_ctr_radio2"]{
+        color:#fff;
+        background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
+        position: relative;
+    }
+
+    #login_ctr_radio1:checked ~ .login_box .login_content,
+    #login_ctr_radio2:checked ~ .login_box .sign_up_content{
+        display: block;
+    }
+
+    .login_radio{
+        display: none;
+    }
+    .login_text{
+        padding: 20px 10px;
+        color: gray;
     }
     .login_text input{
-        margin-left: 45px;
+        margin-left: 65px;
         margin-bottom: 10px;
         padding: 5px;
-        width:70%;
         border: 1px solid grey;
         border-radius: 5px;
         box-shadow: 1px 1px 3px rgb(201, 200, 200) inset;
     }
     .login_text input[type=text]{
-        width:40%;
+        width:42%;
     }
     .login_text img{
         margin-left: 5px;
     }
     .login_text input[type=submit]{
         cursor: pointer;
-        margin-left: 0;
+        margin-left: 0px;
         width:100%;
         color:#fff;
         font-size: 18px;
@@ -110,6 +141,19 @@
         .login_text a:hover{
             color:rgb(250, 77, 71);
         }
+
+    .login_text span{
+        cursor: pointer;
+        margin-left: 0;
+        padding: 5px;
+        color:rgb(255, 255, 255);
+        font-size: 12px;
+        background-color: rgb(68, 152, 248);
+    }
+
+    .AlignRight {
+        text-align: right;
+    }
     /*  ----- 最新消息 -----  */
     .news{
         margin-bottom: 15px;
@@ -193,9 +237,72 @@
     margin-right: 15px;
 }
     /*  ----- 大幅主頁廣告 -----  */
-    .index_ad{
+    .coverflow{
+        height: 330px;
         position: relative;
     }
+    .coverflow>a{
+        display: block;
+        position: absolute;
+        top:0;
+        left:0;
+        opacity: 0;
+        filter: alpha(opacity=0);
+    /*當圖片數量增加，影片長度需更改，變為5s*圖片數量*/
+     -webkit-animation: silder 15s linear infinite;
+     animation: silder 15s linear infinite;
+    }
+    .coverflow>a>img{
+        max-width: 100%;
+    }
+    /*動畫關鍵影格*/
+@-webkit-keyframes silder {
+    3% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    27% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    30% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+@keyframes silder {
+    3% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    27% {
+        opacity: 1;
+        filter: alpha(opacity=100);
+    }
+    30% {
+        opacity: 0;
+        filter: alpha(opacity=0);
+    }
+}
+/*每個圖片各延遲5秒*/
+.coverflow>a:nth-child(3) {
+    -webkit-animation-delay: 10s;
+            animation-delay: 10s;               
+}
+.coverflow>a:nth-child(2) {
+    -webkit-animation-delay: 5s;
+            animation-delay: 5s;
+}
+.coverflow>a:nth-child(1) {
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;    
+}
+/*滑入時停止播放*/
+.coverflow:hover>a{
+-webkit-animation-play-state: paused;
+        animation-play-state: paused;
+}
+
     .arrow_left{
         position: absolute;
         top:22%;
@@ -258,7 +365,10 @@
     .radio_control{
         display: none;
     }
-
+    .game_box img{
+        margin: 5px;
+        box-shadow: 1px 1px 5px 2px#fff;
+    }
 
 .right_content{
     width:240px;
