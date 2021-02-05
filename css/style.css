@@ -46,6 +46,7 @@
         display: flex;
     }
     .login_ctr label{
+        cursor: pointer;
         position: relative;
         display: inline;
         padding: 10px 60px;
