@@ -6,25 +6,25 @@
     padding: 10px;
     background:linear-gradient(rgb(147, 195, 250), rgb(68, 152, 248));
 }
-.header_logo{
-    position: absolute;
-    left:300px;
-}
-.header_menu{
-    position: absolute;
-    top:35%;
-    right:10%;
-}
-.menu_item{
-    cursor: pointer;
-    margin-right: 30px;
-    color:#fff;
-}
-.menu_item img{
-    margin-right: 5px;
-    width: 5%;
-    vertical-align: middle;
-}
+    .header_logo{
+        position: absolute;
+        left:300px;
+    }
+    .header_menu{
+        position: absolute;
+        top:35%;
+        right:10%;
+    }
+    .menu_item{
+        cursor: pointer;
+        margin-right: 30px;
+        color:#fff;
+    }
+    .menu_item img{
+        margin-right: 5px;
+        width: 5%;
+        vertical-align: middle;
+    }
 .content{
     display: flex;
     justify-content: center;
@@ -34,217 +34,236 @@
 }
 .left_content{
     margin-right: 15px;
-    /*width:300px;*/
 }
-.login{
-    height: 250px;
-    margin-bottom: 15px;
-    background-color:#fff;
-    box-shadow: -0.5px 3px 10px #000;
-}
-.login_ctr{
-    display: flex;
-}
-.login_title{
-    padding: 10px;
-    width: 50%;
-    text-align: center;
-    color:#fff;
-    background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
-}
-.sign_up{
-    padding: 10px;
-    width: 50%;
-    text-align: center;
-    color:rgb(147, 195, 250);
-    background-color: rgb(14, 58, 109);
-}
-    .sign_up:hover{
-        color:rgb(255, 255, 255);
-        background:linear-gradient(rgb(139, 204, 113),rgb(4, 172, 26));
+    /*  ----- 登入與註冊 -----  */
+    .login{
+        height: 250px;
+        margin-bottom: 15px;
+        background-color:#fff;
+        box-shadow: -0.5px 3px 10px #000;
     }
-.login_text{
-    padding: 20px 10px 20px 10px;
-}
-.login_text p{
-    color:grey;
-}
-.login_text input{
-    margin-left: 45px;
-    margin-bottom: 10px;
-    padding: 5px;
-    width:70%;
-    border: 1px solid grey;
-    border-radius: 5px;
-    box-shadow: 1px 1px 3px rgb(201, 200, 200) inset;
-}
-.login_text input[type=text]{
-    width:40%;
-}
-.login_text img{
-    margin-left: 5px;
-}
-.login_text input[type=submit]{
-    cursor: pointer;
-    margin-left: 0;
-    width:100%;
-    color:#fff;
-    font-size: 18px;
-    font-weight: bolder;
-    background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
-    border: 1px solid grey;
-    border-radius: 5px;
-}
-    .login_text input[type=submit]:hover{
-        color:rgb(18, 135, 245);
-        background:linear-gradient(rgb(224, 251, 253),rgb(157, 227, 248));
-        border: 2px solid rgb(18, 135, 245);
+    .login_ctr{
+        display: flex;
     }
-.login_text a{
-    display: block;
-    font-size: 14px;
-    font-weight: bolder;
-    color:rgb(53, 140, 240);
-    text-align: right;
-}
-    .login_text a:hover{
-        color:rgb(250, 77, 71);
+    .login_title{
+        padding: 10px;
+        width: 50%;
+        text-align: center;
+        color:#fff;
+        background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
     }
-.news{
-    margin-bottom: 15px;
-    background-color:#fff;
-    box-shadow: -0.5px 3px 10px #000;
+    .sign_up{
+        padding: 10px;
+        width: 50%;
+        text-align: center;
+        color:rgb(147, 195, 250);
+        background-color: rgb(14, 58, 109);
+    }
+        .sign_up:hover{
+            color:rgb(255, 255, 255);
+            background:linear-gradient(rgb(139, 204, 113),rgb(4, 172, 26));
+        }
+    .login_text{
+        padding: 20px 10px 20px 10px;
+    }
+    .login_text p{
+        color:grey;
+    }
+    .login_text input{
+        margin-left: 45px;
+        margin-bottom: 10px;
+        padding: 5px;
+        width:70%;
+        border: 1px solid grey;
+        border-radius: 5px;
+        box-shadow: 1px 1px 3px rgb(201, 200, 200) inset;
+    }
+    .login_text input[type=text]{
+        width:40%;
+    }
+    .login_text img{
+        margin-left: 5px;
+    }
+    .login_text input[type=submit]{
+        cursor: pointer;
+        margin-left: 0;
+        width:100%;
+        color:#fff;
+        font-size: 18px;
+        font-weight: bolder;
+        background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
+        border: 1px solid grey;
+        border-radius: 5px;
+    }
+        .login_text input[type=submit]:hover{
+            color:rgb(18, 135, 245);
+            background:linear-gradient(rgb(224, 251, 253),rgb(157, 227, 248));
+            border: 2px solid rgb(18, 135, 245);
+        }
+    .login_text a{
+        display: block;
+        font-size: 14px;
+        font-weight: bolder;
+        color:rgb(53, 140, 240);
+        text-align: right;
+    }
+        .login_text a:hover{
+            color:rgb(250, 77, 71);
+        }
+    /*  ----- 最新消息 -----  */
+    .news{
+        margin-bottom: 15px;
+        background-color:#fff;
+        box-shadow: -0.5px 3px 10px #000;
 
-}
-.news_title{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    width: 100%;
-    color:#fff;
-    font-size: 18px;
-    font-weight: bolder;
-    background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
-}
-.news_title span{
-    cursor: pointer;
-    color:rgb(252, 229, 96);
-    font-size: 22px;
-}
-.news_text{
-    height: 200px;
-    overflow:auto;
-}
-.news_item{
-    cursor: pointer;
-    display: flex;
-    margin:3px 10px 3px 10px;
-    padding: 10px;
-    color:grey;
-    border-bottom:1px solid #ccc ;
-    justify-content: space-between;
-}
-    .news_item:hover{
-        margin: 0;
-        background-color: rgb(235, 231, 231);
     }
-.news_item span{
-    margin: -3px;
-    padding: 3px;
-    color:rgb(255, 255, 255);
-    background-color: rgb(68, 152, 248);
-    border-radius: 5px;
-}
-.teach{
-    margin-bottom: 15px;
-    background-color:#fff;
-    box-shadow: -0.5px 3px 10px #000;
-}
-.teach_title{
-    padding: 10px;
-    width: 100%;
-    color:#fff;
-    font-size: 18px;
-    font-weight: bolder;
-    background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
-}
-.teach_text{
-    padding: 20px;
-}
-.teach_text label{
-    display: block;
-}
-.teach_text a{
-    display: inline-block;
-    width: 120px;
-    padding: 10px;
-    margin-left: 5px;
-    color:#000;
-    border-bottom: 1px dotted #ccc ;
-}
-    .teach_text a:hover{
-        color:rgb(248, 126, 26);
-        border-bottom: 1px dotted rgb(248, 126, 26) ;
+    .news_title{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        width: 100%;
+        color:#fff;
+        font-size: 18px;
+        font-weight: bolder;
+        background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
     }
-.teach_text img{
-    margin-right: 5px;
-    vertical-align: middle;
-}
+    .news_title span{
+        cursor: pointer;
+        color:rgb(252, 229, 96);
+        font-size: 22px;
+    }
+    .news_text{
+        height: 200px;
+        overflow:auto;
+    }
+    .news_item{
+        cursor: pointer;
+        display: flex;
+        margin:3px 10px 3px 10px;
+        padding: 10px;
+        color:grey;
+        border-bottom:1px solid #ccc ;
+        justify-content: space-between;
+    }
+        .news_item:hover{
+            margin: 0;
+            background-color: rgb(235, 231, 231);
+        }
+    .news_item span{
+        margin: -3px;
+        padding: 3px;
+        color:rgb(255, 255, 255);
+        background-color: rgb(68, 152, 248);
+        border-radius: 5px;
+    }
+    /*  ----- 新手教學 -----  */
+    .teach{
+        margin-bottom: 15px;
+        background-color:#fff;
+        box-shadow: -0.5px 3px 10px #000;
+    }
+    .teach_title{
+        padding: 10px;
+        width: 100%;
+        color:#fff;
+        font-size: 18px;
+        font-weight: bolder;
+        background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
+    }
+    .teach_text{
+        padding: 20px;
+    }
+    .teach_text a{
+        display: inline-block;
+        width: 120px;
+        padding: 10px;
+        margin-left: 5px;
+        color:#000;
+        border-bottom: 1px dotted #ccc ;
+    }
+        .teach_text a:hover{
+            color:rgb(248, 126, 26);
+            border-bottom: 1px dotted rgb(248, 126, 26) ;
+        }
+    .teach_text img{
+        margin-right: 5px;
+        vertical-align: middle;
+    }
 .main_content{
     margin-right: 15px;
 }
-.index_ad{
-    position: relative;
-}
-.arrow_left{
-    position: absolute;
-    top:22%;
-    left:0;
-    opacity: 0;
-}
-    .arrow_left:hover{
-        opacity: 0.3;
+    /*  ----- 大幅主頁廣告 -----  */
+    .index_ad{
+        position: relative;
     }
-.arrow_right{
-    position: absolute;
-    top:22%;
-    right:0;
-    opacity: 0;
-}
-    .arrow_right:hover{
-        opacity: 0.3;
+    .arrow_left{
+        position: absolute;
+        top:22%;
+        left:0;
+        opacity: 0;
     }
-.game_title{
-    display: flex;
-    margin: 10px;
-    border-bottom: 1px solid #fff;
-}
-.hot_game{
-    cursor: pointer;
-    padding: 8px 70px 8px 70px;
-    color:#fff;
-    background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
-    border: 1px solid #fff;
-    border-bottom: 1px solid rgb(68, 152, 248);
-    border-radius: 5px 5px 0 0;
-}
-.new_game{
-    cursor: pointer;
-    padding: 8px 70px 8px 70px;
-    color:rgb(147, 195, 250);
-    background-color: rgb(14, 58, 109);
-    /*border: 1px solid #fff;*/
-    /*border-bottom: 1px solid rgb(68, 152, 248);*/
-    border-radius: 5px 5px 0 0;
-}
-.game_box{
-    padding: 0px 20px 0px 20px;
-}
+        .arrow_left:hover{
+            opacity: 0.3;
+        }
+    .arrow_right{
+        position: absolute;
+        top:22%;
+        right:0;
+        opacity: 0;
+    }
+        .arrow_right:hover{
+            opacity: 0.3;
+        }
+    /*  ----- 遊戲區塊切換 -----  */
+    .game_title{
+        display: flex;
+        margin: 10px;
+        border-bottom: 1px solid #fff;
+    }
+    .game_title label{
+        position: relative;
+        cursor: pointer;
+        display: inline-block;
+        padding: 8px 70px 8px 70px;
+        color:rgb(147, 195, 250);
+        background-color: rgb(14, 58, 109);
+        border-radius: 5px 5px 0 0;
+    }
+    /* .game_title .active{
+        color:#fff;
+        background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
+        border: 1px solid #fff;
+        border-bottom: 1px solid rgb(68, 152, 248);
+    } */
+    #radio1:checked ~ .game_title [for="radio1"],
+    #radio2:checked ~ .game_title [for="radio2"]{
+        color:#fff;
+        background:linear-gradient(rgb(68, 152, 248),rgb(14, 58, 109));
+        border: 1px solid #fff;
+        border-bottom: 1px solid rgb(68, 152, 248);
+    }
+
+    #radio1:checked ~ .game_box .hotgame,
+    #radio2:checked ~ .game_box .newgame{display: block;}
+
+    .game_box{
+        padding: 0px 20px 0px 20px;  
+    }
+    .game{
+        display: none;
+    }
+    /*.hotgame{
+        display: block;
+    }*/
+    .radio_control{
+        display: none;
+    }
+
+
 .right_content{
     width:240px;
     height: 500px;
 }
-
 .footer{
     display: flex;
     width: 100%;
