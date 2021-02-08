@@ -363,7 +363,7 @@
     /*.hotgame{
         display: block;
     }*/
-    .radio_control{
+    .is_radio{
         display: none;
     }
     .game_box img{
